@@ -3345,21 +3345,22 @@ input, select, textarea {
 					ul#navigation ul li {
 							clear:both;
 							width:100%;
+							margin: 0 0;
 							border:0 none;
 							border-bottom:1px solid #c9c9c9;
 					}
 					
-					ul#navigation ul li .project a {
-							background:none;
-							padding:7px 15px;
-							color:#616161;
-							text-shadow:1px 1px 0px #fff;
-							text-decoration:none;
-							display:inline-block;
-							border:0 none;
-							float:left;
-							clear:both;
-							width:150px;
+					ul#navigation ul li a {
+						background: none;
+						padding:2px 15px;
+						color:#616161;
+						text-shadow:1px 1px 0px #fff;
+						text-decoration:none;
+						display:block;
+						border:0 none;
+						text-align: left;
+						clear:none;
+						width:150px;
 					}
 					/*End CO edits*/
 
