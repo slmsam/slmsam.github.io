@@ -110,7 +110,7 @@ input, select, textarea {
 		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, rgba(192,192,192,0.5) 15%,rgba(0, 0, 0, 0.5) 85%), -moz-linear-gradient(0deg,  rgba(227,118,130,0.5), 4%, rgba(0,0,0,0.5));
 		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, rgba(192,192,192,0.5) 15%,rgba(0, 0, 0, 0.5) 85%), -webkit-linear-gradient(0deg,  rgba(227,118,130,0.5), 4%, rgba(0,0,0,0.5));
 		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg,  rgba(192,192,192,0.5) 15%,rgba(0, 0, 0, 0.5) 85%), -ms-linear-gradient(0deg,  rgba(227,118,130,0.5), 4%, rgba(0,0,0,0.5));
-		background-image: url("images/overlay.png"), linear-gradient(45deg, rgba(192,192,192,0.5) 15%, rgba(0,0,0,0.5) 85%), linear-gradient(0deg, rgba(227,118,130,0.5), 4%, rgba(0,0,0,0.5));
+		background-image: url("images/overlay.png"), linear-gradient(45deg, rgba(192,192,192,0.5) 60%, rgba(0,0,0,0.5) 85%), linear-gradient(0deg, rgba(227,118,130,0.5), 15%, rgba(0,0,0,0.5));
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -1832,6 +1832,23 @@ input, select, textarea {
 		border-color: rgba(255, 255, 255, 0.35);
 	}
 
+/* Corpoate Logo */
+
+img.company-logo {
+	display: inline-block;
+	font-size: 3.25rem;
+	width: auto;
+	max-width: 75vw; 
+	height: 2em;
+	line-height: 2.2em;
+	text-align: center;
+}
+
+li.corporateLogo {
+	display: inline-block;
+	margin: 0.5em 0.5em;
+}
+
 /* Button */
 
 	input[type="submit"],
@@ -2268,13 +2285,13 @@ input, select, textarea {
 			display: inline-block;
 			border-radius: 100%;
 			padding: 0.65em;
-			margin: 0 0 2em 0;
+			margin: 0 0 0.5em 0;
 			cursor: default;
 		}
 
 			.icon.major:before {
 				display: inline-block;
-				font-size: 6.25rem;
+				font-size: 3.25rem;
 				width: 2.25em;
 				height: 2.25em;
 				line-height: 2.2em;
@@ -2321,7 +2338,7 @@ input, select, textarea {
 		@media screen and (max-width: 1680px) {
 
 			.icon.major:before {
-				font-size: 5.5rem;
+				font-size: 3.5rem;
 			}
 
 		}
@@ -2329,7 +2346,7 @@ input, select, textarea {
 		@media screen and (max-width: 1280px) {
 
 			.icon.major:before {
-				font-size: 4.75rem;
+				font-size: 3.75rem;
 			}
 
 		}
@@ -2822,9 +2839,8 @@ input, select, textarea {
 	}
 
 		.features li {
-			width: calc(33.33333% - 2em);
+			width: calc(20% - 2em);
 			margin-left: 2em;
-			margin-top: 3em;
 			padding: 0;
 		}
 
@@ -3217,6 +3233,9 @@ input, select, textarea {
 			transform: scale(0.8) rotate(-30deg);
 		}
 
+		.motto {
+			font-family: 'Caveat', cursive;
+		}
 /* Nav */
 
 	#nav {
@@ -3365,7 +3384,7 @@ input, select, textarea {
 					/*End CO edits*/
 
 					#nav ul li a.active {
-						background-color: #ffffff;
+						background-color: lightgrey;
 						box-shadow: none;
 					}
 
