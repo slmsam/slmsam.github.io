@@ -1,5 +1,12 @@
 @import url(fontawesome-all.min.css);
 @import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400';
+@font-face {
+	font-family: "Berton Roman";
+	src:url('../webfonts/webfonts_Berton-Roman-Regular/Berton-Roman-Regular.ttf.woff') format('woff'),
+        url('../webfonts/webfonts_Berton-Roman-Regular/Berton-Roman-Regular.ttf.svg#Berton-Roman-Regular') format('svg'),
+        url('../webfonts/webfonts_Berton-Roman-Regular/Berton-Roman-Regular.ttf.eot'),
+        url('../webfonts/webfonts_Berton-Roman-Regular/Berton-Roman-Regular.ttf.eot?#iefix') format('embedded-opentype'); src: url("../webfonts/webfonts_Berton-Roman-Regular/Berton-Roman-Regular.ttf.eot");
+}
 
 /*
 	Stellar by HTML5 UP
@@ -2657,6 +2664,67 @@ li.corporateLogo {
 
 /* Section/Article */
 
+	.showcase {
+		display: flex;
+		width: auto;
+		height: auto;
+		flex-flow: center;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		margin: 0px auto;
+	}
+
+	.showcase .project {
+		height: 240px;
+		width: 320px;
+	}
+
+	.showcase .project img {
+		height: 200px;
+		width: 300px;
+		margin: 20px 10px 10px;
+		opacity: 1;
+		transition: .5s ease;
+		backface-visibility: hidden;
+		overflow: hidden;
+	}
+
+	.showcase .project-name {
+		transition: .5s ease;
+		opacity: 0;
+		top: 50%;
+		left: 50%;
+		transform: translate(0%, -240px);
+		-ms-transform: translate(0%, -240px);
+		-webkit-transition: all 400ms ease-out;
+		-moz-transition: all 400ms ease-out;
+		-o-transition: all 400ms ease-out;
+		-ms-transition: all 400ms ease-out;
+		transition: all 400ms ease-out;
+		height: 200px;
+		width: 300px;
+		margin: 20px 10px 20px;
+		display: flex;
+		align-items: center;
+		text-align: center;
+	}
+
+	.showcase .project-name h4 {
+		width: 300px;
+		background-color: darkgrey;
+		opacity: 1;
+		transition-delay: 0s;
+  	transition-duration: 0.4s;
+	}
+
+	.showcase .project img:hover {
+		opacity: 0.3;
+	}
+	
+	.showcase .project-name:hover {
+		opacity: 1;
+	}
+
 	section.special, article.special {
 		text-align: center;
 	}
@@ -3035,6 +3103,17 @@ li.corporateLogo {
 				width: 16em;
 			}
 
+			.spotlight .cropless-image img {
+				display: block;
+				width: 14em;
+				margin-left: 1em;
+				margin-right: 1em;
+			}
+
+			p.alignLeft {
+				text-align: left;
+			}
+
 		@media screen and (max-width: 980px) {
 
 			.spotlight {
@@ -3234,7 +3313,7 @@ li.corporateLogo {
 		}
 
 		.motto {
-			font-family: 'Caveat', cursive;
+			font-family: 'Berton Roman', cursive;
 		}
 /* Nav */
 
