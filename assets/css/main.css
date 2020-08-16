@@ -3867,6 +3867,18 @@ li.corporateLogo {
 			margin-left: 2em;
 		}
 
+		#footer .contact-info {
+			/*width: calc(66% - 2em);*/
+			flex-grow: 2;
+			margin-left: 2em;
+		}
+
+		#footer .closing {
+			/*width: calc(33% - 2em);*/
+			flex-grow: 1;
+			margin-left: 2em;
+		}
+
 		#footer .copyright {
 			width: 100%;
 			margin: 2.5em 0 2em 0;
