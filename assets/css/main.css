@@ -3269,6 +3269,118 @@ li.corporateLogo {
 
 /* Header */
 
+	li.menu {
+		display: none;
+	}
+
+	@media screen and (max-width: 790px) {
+		li.menu {
+			display: inline-block;
+			position: fixed;
+			z-index: 9999;
+			top: 0px;
+			left: 10px;
+			font-size: 3em;
+			user-select: none; 
+			cursor: pointer; 
+			white-space: nowrap; 
+			opacity: 1;
+		}
+
+		/*CO Addition: Menu Bar*/
+		#menu ul li {
+			-moz-transition: margin 0.2s ease;
+			-webkit-transition: margin 0.2s ease;
+			-ms-transition: margin 0.2s ease;
+			transition: margin 0.2s ease;
+			display: block;
+			float: left;
+			position: relative;
+			margin: 0 0.35em;
+			padding: 0;
+			vertical-align: middle;
+		}
+
+			#menu ul li a {
+				-moz-transition: font-size 0.2s ease;
+				-webkit-transition: font-size 0.2s ease;
+				-ms-transition: font-size 0.2s ease;
+				transition: font-size 0.2s ease;
+				display: inline-block;
+				position: relative;
+				height: 2.25em;
+				line-height: 2.25em;
+				padding: 0 1.25em;
+				border: 0;
+				border-radius: 8px;
+				box-shadow: inset 0 0 0 1px transparent;
+			}
+
+				#menu ul li a:hover {
+					background-color: rgba(222, 222, 222, 0.25);
+				}
+
+				ul#menu li:hover > ul
+				{
+						visibility:visible;
+						opacity:1;
+				}
+				
+				ul#menu ul, ul#dropside ul li ul {
+						list-style: none;
+						margin: 0;
+						padding: 0;
+						visibility:hidden;
+						opacity:0;
+						position: absolute;
+						z-index: 99999;
+						background:#f8f8f8;
+						box-shadow:1px 1px 3px #ccc;
+						-webkit-transition:opacity 0.2s linear, visibility 0.2s linear;
+						-moz-transition:opacity 0.2s linear, visibility 0.2s linear;
+						-o-transition:opacity 0.2s linear, visibility 0.2s linear;
+						transition:opacity 0.2s linear, visibility 0.2s linear;
+				}
+				
+				ul#menu ul {
+						top: 43px;
+						left: 1px;
+				}
+				
+				ul#menu ul li ul {
+						top: 0;
+						left: 181px; /* strong related to width:180px; from above */
+				}
+				
+				ul#menu ul li {
+						clear:both;
+						width:100%;
+						margin: 0 0;
+						border:0 none;
+						border-bottom:1px solid #c9c9c9;
+				}
+				
+				ul#menu ul li a {
+					background: none;
+					padding:2px 15px;
+					color:#616161;
+					text-shadow:1px 1px 0px #fff;
+					text-decoration:none;
+					display:block;
+					border:0 none;
+					text-align: left;
+					clear:none;
+					width:auto;
+				}
+
+				#menu ul li a.active {
+					background-color: lightgrey;
+					box-shadow: none;
+				}
+		}
+			
+		/*End CO edits*/
+
 	#header {
 		padding: 5em 5em 1em 5em ;
 		text-align: center;
