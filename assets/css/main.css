@@ -1906,7 +1906,7 @@ img.company-logo {
 	display: inline-block;
 	font-size: 3.25rem;
 	width: auto;
-	max-width: 75vw; 
+	max-width: 75vw;
 	height: 2em;
 	line-height: 2.2em;
 	text-align: center;
@@ -3154,6 +3154,22 @@ li.corporateLogo {
 				}
 
 		}
+/* Article */
+.article {
+	display: -moz-flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	-moz-flex-direction: column;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-moz-align-items: center;
+	-webkit-align-items: center;
+	-ms-align-items: center;
+	align-items: center;
+	margin: 0 0 2em 0;
+}
 
 /* Spotlight */
 
@@ -3162,6 +3178,22 @@ li.corporateLogo {
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
+		-moz-align-items: center;
+		-webkit-align-items: center;
+		-ms-align-items: center;
+		align-items: center;
+		margin: 0 0 2em 0;
+	}
+
+	.vertical.spotlight {
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		-moz-flex-direction: column;
+		-webkit-flex-direction: column;
+		-ms-flex-direction: column;
+		flex-direction: column;
 		-moz-align-items: center;
 		-webkit-align-items: center;
 		-ms-align-items: center;
@@ -3279,12 +3311,13 @@ li.corporateLogo {
 			position: fixed;
 			z-index: 9999;
 			top: 0px;
-			left: 10px;
+			left: 5px;
 			font-size: 3em;
 			user-select: none; 
 			cursor: pointer; 
 			white-space: nowrap; 
 			opacity: 1;
+			color: lightblue;
 		}
 
 		/*CO Addition: Menu Bar*/
@@ -3400,7 +3433,7 @@ li.corporateLogo {
 		}
 
 			#header.alt h1 {
-				font-size: 3.25em;
+				font-size: 2.25em;
 			}
 
 			#header.alt > * {
@@ -4039,11 +4072,16 @@ li.corporateLogo {
 			-webkit-flex-direction: column;
 			-ms-flex-direction: column;
 			flex-direction: column;
-			margin: 0px 1em;
+			-moz-align-items: center;
+			-webkit-align-items: center;
+			-ms-align-items: center;
+			align-items: center;
+			margin: 0px 1em 1em;
 		}
 
 		#main .headshots .profile p {
-			font-size: 1.5em;
+			font-size: 1em;
+			margin: 0 0;
 		}
 
 		#main .headshots .profile img{
@@ -4055,7 +4093,7 @@ li.corporateLogo {
 			-webkit-flex: 1;
 			-ms-flex: 1;
 			flex: 1;
-			width: 200px;
+			max-width: 200px;
 		}
 
 		#main > .main {
@@ -4192,6 +4230,7 @@ li.corporateLogo {
 			-ms-flex-grow: 1;
 			flex-grow: 1;
 			margin-left: 2em;
+			padding-right: 0.5em;
 		}
 
 		#footer .copyright {
