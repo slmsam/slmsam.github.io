@@ -2772,6 +2772,55 @@ li.corporateLogo {
 		overflow: hidden;
 	}
 
+	.showcase .project.headshots {
+		height: 350px;
+		width: 300px;
+		margin: 20px 10px 10px;
+	}
+
+	.showcase .project.headshots img {
+		height: 300px;
+		width: 300px;
+		margin: 20px 10px 10px;
+		opacity: 1;
+		transition: .5s ease;
+		backface-visibility: hidden;
+		overflow: hidden;
+	}
+
+	.showcase .headshots .project-name {
+		transition: .5s ease;
+		opacity: 0;
+		top: 50%;
+		left: 50%;
+		transform: translate(0%, -330px);
+		-ms-transform: translate(0%, -330px);
+		-webkit-transition: all 400ms ease-out;
+		-moz-transition: all 400ms ease-out;
+		-o-transition: all 400ms ease-out;
+		-ms-transition: all 400ms ease-out;
+		transition: all 400ms ease-out;
+		height: 300px;
+		width: 300px;
+		padding: 150px 0px 0px 0px;
+		margin: 20px 10px 20px;
+		display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+		display: -ms-flexbox;  /* TWEENER - IE 10 */
+		display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+		display: -webkit-flexbox; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+		display: -moz-flex;
+		display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+		-moz-align-items: center;
+		-webkit-align-items: center;
+		-ms-align-items: center;
+		align-items: center;
+		-moz-flex-direction: column;
+		-webkit-flex-direction: column;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		text-align: center;
+	}
+
 	.showcase .project-name {
 		transition: .5s ease;
 		opacity: 0;
@@ -2786,6 +2835,7 @@ li.corporateLogo {
 		transition: all 400ms ease-out;
 		height: 200px;
 		width: 300px;
+		padding: 70px 0px 0px 0px;
 		margin: 20px 10px 20px;
 		display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6, BB7 */
 		display: -ms-flexbox;  /* TWEENER - IE 10 */
@@ -2797,10 +2847,14 @@ li.corporateLogo {
 		-webkit-align-items: center;
 		-ms-align-items: center;
 		align-items: center;
+		-moz-flex-direction: column;
+		-webkit-flex-direction: column;
+		-ms-flex-direction: column;
+		flex-direction: column;
 		text-align: center;
 	}
 
-	.showcase .project-name h4 {
+	.showcase .project-name h4, .showcase .project-name h3 {
 		width: 300px;
 		background-color: darkgrey;
 		opacity: 1;
@@ -2808,6 +2862,14 @@ li.corporateLogo {
   	transition-duration: 0.4s;
 	}
 
+	.showcase .headshots .project-name h4, .showcase .headshots .project-name h3 {
+		width: 280px;
+		background-color: darkgrey;
+		opacity: 1;
+		transition-delay: 0s;
+  	transition-duration: 0.4s;
+	}
+	
 	.showcase .project img:hover {
 		opacity: 0.3;
 	}
